@@ -1,4 +1,4 @@
-🏧 ATM Simulation System — 2025 Edition
+🏧 ATM Simulation System 
 
 A modern Java-based ATM simulator with a full JavaFX GUI, secure PIN hashing, transaction history tracking, and multi-step card registration — all powered by a real database backend.
 
@@ -113,6 +113,7 @@ Service Layer	Business logic for cards, transactions, validation
 Database Layer	Stores all users, PINs, balances, history
 Security Layer	SHA hashing, login attempts, validation checks
 Validation System	Protects against harmful/incorrect input
+
 🔐 4. Security Highlights
 ✔ PINs are never stored in plain text
 
@@ -148,6 +149,9 @@ Full history of all transactions
 
 Every time something happens (withdraw, deposit, change PIN),
 a database entry is added.
+
+If transcation fails , there is backup operation which prevents clients 
+from losing their withdraw or deposit amount.
 
 🧪 6. Testing
 
